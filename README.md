@@ -1,2 +1,2 @@
 # price-plan-challenge
-create the Order summary component from frontend mentor challenge
+created the Order summary component from frontend mentor challenge
