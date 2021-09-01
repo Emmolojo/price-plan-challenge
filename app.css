@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    /* primary colors */
+    --p-blue: #E0E8FF;
+    --b-blue: hsl(245, 75%, 52%);
+    --grey:hsl(0, 0%, 50%);
+    /* Neutral colors */
+    --v-p-blue: hsl(225, 100%, 98%);
+    --d-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size:15px;
+   
+    box-sizing: border-box;
+ }
+
+/* Housing Styling */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background:url(/pattern-background-mobile.svg);
+    background-color: var(--p-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 20px;
+    text-align: center;
+    width: 375px;
+    margin:10px;
+    background-color: #fff;
+    /* height: 622px; */
+    vertical-align: start;
+}
+img.hero{
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+    width:100%;
+}
+.price_plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1875rem;
+    background-color: #F8F9FE;
+    margin: auto 1.6875rem;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* Global Styling */
+h1{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-top: 2.5rem;
+}
+p{
+    margin: 1.75rem;
+}
+button{
+     margin: 1.75rem;
+     padding:20px 70px;
+     background-color: var(--b-blue);
+     color: #fff;
+     font-weight: 700;
+     border-radius: 10px;
+     border:0;
+        box-shadow: 0px 26px 27px -10px hsla(245, 75%, 52%, 0.253);
+        -webkit-box-shadow: 0px 26px 27px -10px hsla(245, 75%, 52%, 0.253);
+        -moz-box-shadow: 0px 26px 27px -10px hsla(245, 75%, 52%, 0.253);
+}
+button:hover{
+    background-color: #766CF1;
+    cursor: pointer;
+}
+a{
+    color:#766CF1;
+}
+a:hover{
+    color:#766CF1;
+    text-decoration: none;
+}
+span{
+    text-decoration: none;
+     color: var(--grey);
+     font-weight: 700;
+     display: block;
+     cursor: pointer;
+     width:40%;
+     margin:1rem auto;
+      margin-bottom: 2rem;
+}
+span:hover{
+     color: var(--dark-blue);
+}
+
+/* Styles */
+.price_plan p{
+    margin: 0;
+    color: var(--dark-blue);
+}
+.price_plan p:nth-child(2){
+    color: var(--grey);
+    font-weight: 500;
+}
+.description{
+    padding: 12px;
+    letter-spacing: 1.1px;
+    line-height: 20px;
+    color: var(--grey);
+    
+}
+.prices{
+    width: 50%;
+    text-align: left;
+    padding-left: 25px;
+}
+
+@media screen and (min-width: 768px) {
+   body { 
+       background:url(/pattern-background-desktop.svg);
+       background-color: #E0E8FF;
+       background-repeat: no-repeat;
+       background-size: 100%;
+       background-position: top;
+}
+}
